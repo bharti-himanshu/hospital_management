@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fill Record</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css" rel="stylesheet">
+
+body{
+background-image:url('https://www.designzzz.com/wp-content/uploads/2011/08/71.jpg');
+background-repeat:no-repeat;
+height:100%;
+background-size:cover;
+color:white;
+}
+div.well{
+  height: 250px;
+}
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%;
+  height: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
+}
+
+#logo-container{
+  margin: auto;
+  margin-bottom: 10px;
+  width:200px;
+  height:30px;
+
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="Absolute-Center is-Responsive">
+
+      <div class="col-sm-12 col-md-10 col-md-offset-1">
+
+<form method="post" id="loginForm" style="color:green; margin:40px;">
+{% csrf_token %}
+
+{{form}}
+
+<button type="submit" style="margin:10px;" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>

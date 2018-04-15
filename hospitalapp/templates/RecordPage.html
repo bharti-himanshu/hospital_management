@@ -1,0 +1,88 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Fill Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <div class="container">
+     <div class="row">
+         <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+             <div class="row">
+                 <div class="col-xs-6 col-sm-6 col-md-6">
+                     <address>
+                         <strong>Group17 Hospital</strong>
+                         <br />
+                         2135 Sunset Blvd
+                         <br />
+                         Los Angeles, CA 90026
+                         <br />
+                         <abbr title="Phone">P:</abbr> (213) 484-6829
+                     </address>
+                 </div>
+                 <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                      <p>
+                         <em>Name:{{patient.Name}}</em>
+                     </p>
+                     <p>
+                         <em>Receipt #:{{record.RecordNo}}</em>
+                     </p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="text-center">
+                     <h1>Details</h1>
+                 </div>
+
+                 <table class="table table-hover">
+
+                     <tbody>
+                         <tr>
+                             <td class="col-md-9"><em> patientid:</em></td>
+
+                             <td class="col-md-1 text-center">{{record.Patientid}}</td>
+
+                         </tr>
+                         <tr>
+                             <td class="col-md-9"><em>disease</em></td>
+
+                             <td class="col-md-1 text-center">{{record.Disease}}</td>
+
+                         </tr>
+                         <tr>
+                             <td class="col-md-9"><em>medicine</em></td>
+
+                             <td class="col-md-1 text-center">{{record.Medicine}}</td>
+
+                         </tr>
+                         <tr>
+                             <td class="col-md-9"><em>DOA</em></td>
+
+                             <td class="col-md-1 text-center">{{record.DateOfAdmission}}</td>
+
+                         </tr>
+                         <tr>
+                             <td class="col-md-9"><em>DOD</em></td>
+
+                             <td class="col-md-1 text-center">{{record.DateOfDischarge}}</td>
+
+                         </tr>
+                         <tr>
+                             <td class="col-md-9"><em>RoomNo</em></td>
+
+                             <td class="col-md-1 text-center">{{record.RoomNo}}</td>
+
+                         </tr>
+
+                     </tbody>
+                 </table>
+
+             </div>
+         </div>
+     </div>
+  </div>
+  </body>
